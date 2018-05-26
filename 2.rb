@@ -16,7 +16,7 @@ class Rectangulo
   end
 
   def lados
-    puts "los lados miden #{@base} y #{@altura}"
+    puts "los lados miden #{@lado1} y #{@lado2}"
   end
 end
 
@@ -28,15 +28,17 @@ class Cuadrado
   end
 
   def lados
-    puts "los lados miden #{@lado}"
+    puts "los lados miden #{@lado1}"
   end
 end
 
 rectangulo = Rectangulo.new(10,5)
 cuadrado = Cuadrado.new(5)
 
+rectangulo.lados
 puts rectangulo.perimetro
 puts rectangulo.area
 
+cuadrado.lados
 puts cuadrado.perimetro
 puts cuadrado.area
